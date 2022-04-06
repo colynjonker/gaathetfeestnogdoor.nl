@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DEV_DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model aanwezigheid {
+  id         String       @id @default(cuid())
+  naam       String       @db.VarChar(255)
+  aantal     Int          @default(1)
+  kostuum    Boolean      @default(true)
+  extra      String?
+  drankkeuze drankkeuze[]
+}
+
+model drank {
+  id         String       @id @default(cuid())
+  naam       String       @unique
+  drankkeuze drankkeuze[]
+}
+
+model drankkeuze {
+  drank_id     String
+  aanwezige_id String
+  aanwezige    aanwezigheid @relation(fields: [aanwezige_id], references: [id])
+  drank        drank        @relation(fields: [drank_id], references: [id])
+
+  @@id([drank_id, aanwezige_id])
+  @@index([aanwezige_id], map: "drankkeuze_aanwezige_id_fkey")
+}
