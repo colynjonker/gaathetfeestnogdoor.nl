@@ -65,8 +65,8 @@ export const getStaticProps: GetStaticProps = async () => {
     const aanwezigData = await(Promise.all([getAanwezigData()]))
     return {
         props: {
-            chartData,
-            aanwezigData
+            //chartData,
+            //aanwezigData
         },
         revalidate: 60, // In seconds
     }
