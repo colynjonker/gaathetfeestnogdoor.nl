@@ -17,9 +17,10 @@ export default function Informatie() {
                         Let op, als u voorheen was
                         uitgenodigd maar niet in staat was te komen, bent u nog steeds welkom bij dit feest. De
                         leden van het Koninklijk Huis gaan er dus ook vanuit van iedereens <strong>aanwezigheid</strong> op de snel aangekondigde datum. Wij hadden veel zin in het
-                        feest en wij hopen jullie natuurlijk ook. Meer informatie zal spoedig worden bekent gemaakt op deze website of in de groepsapp. Vragen? Neem
-                        <Link href={"/contact"}><a
-                                href="https://gaathetfeestnogdoor.nl/contact"> contact</a>
+                        feest en wij hopen jullie natuurlijk ook. Meer informatie zal spoedig worden bekend gemaakt op deze website of in de groepsapp. Vragen? Neem
+                        <Link href={"/contact"}>
+                            <a
+                                href="/contact"> contact</a>
                         </Link> met ons op.
                     </p>
                 </div>
@@ -33,7 +34,7 @@ export default function Informatie() {
                     Niet zeker wat het plan van het feestje was, download de
                     <Link href={"pdf/uitnodiging.pdf"}><a
                         className="external"
-                        download="download">koninklijke uitnodiging</a>
+                        download="download"> koninklijke uitnodiging</a>
                     </Link>.
                     We hopen snel weer met jullie een grandioos feest te bouwen.
                 </p>

@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <div className="wrapper">
               <div className="article content">
-                  <h1>Het Feest gaat door op <strong>30 april</strong>.</h1>
+                  <h1>Het feest gaat door op <strong>30 april</strong>.</h1>
                   <div className="intro">
                       <p>Houdt deze website in de gaten voor meer informatie.</p>
                   </div>

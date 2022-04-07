@@ -9,7 +9,7 @@ export default function Contact() {
                 <div className="intro">
                     <p> U kunt uw vragen, opmerkingen of suggesties doorgeven aan Bas of Colyn. De contactgegevens
                         vindt u hieronder. Kijk in de <a href="https://gaathetfeestnogdoor.nl/www.whatsapp.com"
-                                                         className="external">groepsapp</a> of bel op <a
+                                                         className="external">groepsapp</a> of bel <a
                             href="tel:+31620837279">mij</a> (op
                         werkdagen bereikbaar van 12.00 tot 20.00 uur). Een brief is nog leuker. </p>
                 </div>

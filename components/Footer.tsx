@@ -30,7 +30,7 @@ export default function Footer() {
                     <ul>
                         <li>
                             <Link href={"/statistiek"}>
-                                <a lang="/statistiek">Statistiek</a>
+                                <a lang="/statistiek">Statistieken</a>
                             </Link>
                         </li>
                         <li>
@@ -39,8 +39,8 @@ export default function Footer() {
                             </Link>
                         </li>
                         <li>
-                            <Link href={"/locatie"}>
-                                <a lang="nl">Locatie</a>
+                            <Link href={"https://github.com/colynjonker/gaathetfeestnogdoor.nl"}>
+                                <a lang="nl">Broncode</a>
                             </Link>
                         </li>
                     </ul>

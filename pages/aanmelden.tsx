@@ -46,7 +46,7 @@ export default function Aanmelden() {
             <div className={"article content"}>
                 <h1>Aanmelden voor het feest op 30 April</h1>
                 <div className={"intro"}>
-                    <p>Alle aanwezigen dienen dit formulier in te vullen zover mogelijk.
+                    <p>Alle aanwezigen dienen dit formulier,zover mogelijk, in te vullen.
                         Dit in verband met het aankopen van de consumpties en inzicht in de verdere organisatie van het feest.
                         Er is een mogelijkheid om een voorkeur door te geven aan dranken in het onderstaande formulier.  </p>
                     <p className={"attention"}>Gelieve dit formulier 1x in te vullen per uitnodiging</p>
@@ -73,7 +73,7 @@ export default function Aanmelden() {
                                 .then(res => console.log(res))
                                 .catch(err => console.log(err));
                             console.log("Ingediend");
-                            router.push("/statistiek");
+                            router.push("/statistiek").then(r => r);
                         }}>
                     {formik => (
                         <Form className={"form"}>
@@ -133,7 +133,7 @@ export default function Aanmelden() {
                             </div>
                             <div id="avg" className={"eforms-fieldgroup"}>
                                 <div className={"eformText"}>
-                                    <h3>We proberen zoveel mogelijk rekening te houden met u wensen.</h3>
+                                    <h3>We proberen zoveel mogelijk rekening te houden met uw wensen.</h3>
                                     <p>Wij kijken er erg naar uit om jullie te ontvangen op ons feest.
                                     Denken jullie nog aan de verkleedpartij?
                                         Het beste en origineelste kostuum van de avond wint een mooie prijs.
@@ -144,8 +144,7 @@ export default function Aanmelden() {
                                     <ul>
                                         <li>Geld</li>
                                         <li>Felicitaties</li>
-                                        {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                        <li>Thema gerelateerde cadeau&apos;s</li>
+                                        <li>Thema gerelateerde cadeaus</li>
                                     </ul>
                                 </div>
                                 <div className={"eforms-field"}>

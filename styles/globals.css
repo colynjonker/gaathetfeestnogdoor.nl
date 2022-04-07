@@ -2524,7 +2524,6 @@ header .skiplinks {
 .populairTopics ul a:before, .subNavigation ul a:before {
     display: inline-flex;
     align-items: center;
-    content: "î¨¥";
     font-family: RO Icons;
     font-size: .7rem;
     font-weight: 400;
@@ -2572,8 +2571,7 @@ header .skiplinks {
 }
 
 .populairTopics ul a.external:before, .subNavigation ul a.external:before {
-    content: "î¨ž";
-    font-family: RO Icons;
+    font-family: RO Icons, serif;
     font-size: .595rem;
     font-weight: 400;
     line-height: inherit;
